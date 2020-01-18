@@ -13,7 +13,7 @@
   "scripts": {
     "prebuild": "CI=true react-scripts test --colors",
     "predeploy": "npm run build",
-    "deploy": "now --prod ./build"
+    "deploy": "now --prod ./build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
