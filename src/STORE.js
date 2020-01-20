@@ -1,5 +1,6 @@
 module.exports = [
   {
+    id: 1,
     title: "Freeze Game",
     activityType: "Gross Motor",
     materials: [
@@ -10,6 +11,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 2,
     title: "Ball Ramps",
     activityType: "Gross Motor",
     materials: [
@@ -24,6 +26,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 3,
     title: "Crocodile Snap! Game",
     activityType: "Literacy",
     materials: [
@@ -35,6 +38,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 4,
     title: "Parking Game",
     activityType: "Literacy",
     materials: [
@@ -50,6 +54,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 5,
     title: "Stickers!",
     activityType: "Art",
     materials: ["Stickers", "Lots of spare paper"],
@@ -58,6 +63,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 6,
     title: "Pom-Pom Painting",
     activityType: "Art",
     materials: [
@@ -72,6 +78,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 7,
     title: "Non-Traditional Painting",
     activityType: "Art",
     materials: [
@@ -85,6 +92,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 8,
     title: "Sensory Table Ideas",
     activityType: "Sensory",
     materials: [
@@ -99,6 +107,7 @@ module.exports = [
     age: 3
   },
   {
+    id: 9,
     title: "Sonsory Bags",
     activityType: "Sensory",
     materials: [

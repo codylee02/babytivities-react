@@ -1,8 +1,17 @@
 import React from "react";
-import STORE from "./STORE.js";
+import { Route } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar.js";
+import Activities from "./routes/Activities/Activities.js";
 
 function App() {
-  return <main className="App">Initial Deploy:</main>;
+  return (
+    <>
+      <NavBar />
+      <main className="App">
+        <Route exact path="/activities" component={Activities} />
+      </main>
+    </>
+  );
 }
 
 export default App;
