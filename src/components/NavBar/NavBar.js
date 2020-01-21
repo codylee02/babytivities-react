@@ -32,7 +32,7 @@ export default class NavBar extends React.Component {
           <Link to={"/favorites"} onClick={() => this.toggleMenu()}>
             Favorites
           </Link>
-          <Link to={"/logout"} onClick={() => this.toggleMenu()}>
+          <Link to={"/"} onClick={() => this.toggleMenu()}>
             Logout
           </Link>
         </div>
