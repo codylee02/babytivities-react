@@ -5,7 +5,7 @@ import STORE from "../../STORE";
 
 export default function Activities(props) {
   const activities = STORE.map(activity => (
-    <ActivityListItem activity={activity} />
+    <ActivityListItem key={activity.id} activity={activity} />
   ));
 
   return (
