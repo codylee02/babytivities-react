@@ -1,11 +1,11 @@
 .Activities {
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    right: 0;
-    overflow: auto;
-    margin-left: .5rem;
-    margin-right: .5rem;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .Activities__ul {
