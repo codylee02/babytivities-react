@@ -8,7 +8,8 @@ module.exports = [
     ],
     instructions:
       "Play a song on your device and encourage your child to dance and wiggle and hop and move as much as they can. When you stop the music, say “FREEZE!” and have them stay as still as they can until the music starts playing again.",
-    age: 3
+    age: "24-36m",
+    favorite: true
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ module.exports = [
     ],
     instructions:
       "Place balls inside muffin tin. Lean the piece of cardboard (or whatever else you have chosen) against the stool, and tape it if necessary to hold it in place. Fold the sides of a piece of construction paper up, and then tape the bottom of the ramp to the cardboard. Repeat this with two other pieces of construction paper. Then, have your toddler take the balls from the muffin tin and roll them down the ramps and watch them place them down them again and again!",
-    age: 3
+    age: "24-36m",
+    favorite: true
   },
   {
     id: 3,
@@ -35,7 +37,8 @@ module.exports = [
     ],
     instructions:
       "Have your child in front of you with your bag of items beside you. Move your hands like a crocodile and sing: “Crocodile, Crocodile, down by the lake, I’m going to reach my hands in your bag and see what you ate!” Then reach in the bag and pull out an item. Give your child a few seconds to say the object first, and then sound out the object together.",
-    age: 3
+    age: "24-36m",
+    favorite: false
   },
   {
     id: 4,
@@ -51,7 +54,8 @@ module.exports = [
     ],
     instructions:
       "On the large piece of paper, draw parking spots that are big enough for the cars or other toys you have, and write a different letter or number in each spot. On the smaller piece of paper, write corresponding letters that are small enough to fit on the toys, then cut out the letters and tape them to the toys. Have your child match the toys to the correct letter on the paper, and have fun with it! If they place a toy in the “wrong” spot, ask them if the letters match up and if they can see the same letter anywhere else.",
-    age: 3
+    age: "24-36m",
+    favorite: true
   },
   {
     id: 5,
@@ -60,7 +64,8 @@ module.exports = [
     materials: ["Stickers", "Lots of spare paper"],
     instructions:
       "Allow your child to just stick those stickers you have laying around wherever they want on the paper! Many people tend to only let their children use a few stickers at a time. However, stickers are a great art AND fine motor activity because they challenge children to peel off stickers, which is not always easy to do. As long as they do not stick their stickers on everything in sight, stickers can be a great, no-mess alternative to painting or coloring!",
-    age: 3
+    age: "24-36m",
+    favorite: false
   },
   {
     id: 6,
@@ -75,7 +80,8 @@ module.exports = [
     ],
     instructions:
       "Attach a few cotton balls to clothespins, and let your child use them as an alternative to paint brushes. As simple as this may sound, this is a great way to introduce your child to different utensils, as it is likely that they have never painted with a clothespin. It also provides them with a different experience because of the way that the pom-poms paint compared to a traditional paintbrush.",
-    age: 3
+    age: "24-36m",
+    favorite: false
   },
   {
     id: 7,
@@ -89,7 +95,8 @@ module.exports = [
     ],
     instructions:
       "With your alternative paintbrush ready, allow your child to explore the different utensil in whatever way they would like with the paint!",
-    age: 3
+    age: "24-36m",
+    favorite: false
   },
   {
     id: 8,
@@ -104,7 +111,8 @@ module.exports = [
     ],
     instructions:
       "Pour your sensory item into the plastic container, as well as a few toys for your little one to dig and find (make sure not to add too many toys as this can sometimes be overwhelming! Stick to 2-3 larger toys, and 5-6 smaller ones)",
-    age: 3
+    age: "24-36m",
+    favorite: true
   },
   {
     id: 9,
@@ -118,6 +126,7 @@ module.exports = [
     ],
     instructions:
       "Squeeze the bottle of hair gel into the bag, then add the small objects to the bag if you would like to. Seal it and tape up all of the edges of the bag really well. If you would like, you can tape the bag to a hard surface such as a table or window so that your child can’t poke holes in it as easily.",
-    age: 3
+    age: "24-36m",
+    favorite: false
   }
 ];
