@@ -26,9 +26,15 @@ export default class NavBar extends React.Component {
         />
 
         <div className={menuClass}>
-          <Link to={"/activities"}>Activities</Link>
-          <Link to={"/favorites"}>Favorites</Link>
-          <Link to={"/logouts"}>Logout</Link>
+          <Link to={"/activities"} onClick={() => this.toggleMenu()}>
+            Activities
+          </Link>
+          <Link to={"/favorites"} onClick={() => this.toggleMenu()}>
+            Favorites
+          </Link>
+          <Link to={"/logout"} onClick={() => this.toggleMenu()}>
+            Logout
+          </Link>
         </div>
       </nav>
     );
