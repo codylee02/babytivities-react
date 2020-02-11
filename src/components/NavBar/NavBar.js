@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import TokenService from "../../services/token-service";
 
 import "./NavBar.css";
 
@@ -15,8 +16,15 @@ export default class NavBar extends React.Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
 
+  handleLogoutClick() {
+    TokenService.clearAuthToken();
+  }
+
   render() {
     let menuClass = this.state.isOpen ? "NavLinks" : "NavLinks-closed";
+    let landingPageLink = TokenService.hasAuthToken()
+      ? "Logout"
+      : "Landing Page";
     return (
       <nav className="NavBar">
         <FontAwesomeIcon
@@ -32,8 +40,8 @@ export default class NavBar extends React.Component {
           <Link to={"/favorites"} onClick={() => this.toggleMenu()}>
             Favorites
           </Link>
-          <Link to={"/"} onClick={() => this.toggleMenu()}>
-            Logout
+          <Link to={"/"} onClick={() => this.handleLogoutClick()}>
+            {landingPageLink}
           </Link>
         </div>
       </nav>
