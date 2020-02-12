@@ -13,8 +13,7 @@ export default function ActivityListItem(props) {
           {props.activity.title}
         </Link>
         <div className="ActivityListItem__meta">
-          <span> {props.activity.age}</span>{" "}
-          <span>{props.activity.activityType}</span>
+          <span> {props.activity.age}</span> <span>{props.activity.type}</span>
         </div>
       </div>
       <div className="ActivityListItem__favorite">
