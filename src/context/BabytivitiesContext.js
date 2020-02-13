@@ -15,7 +15,6 @@ export class BabytivitiesProvider extends React.Component {
   };
 
   setActivitiesList = activitiesList => {
-    console.log("SETACTRUN");
     this.setState({ activitiesList });
   };
 

@@ -7,6 +7,13 @@ const ActivitiesApiService = {
     }).then(res =>
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
+  },
+  getActivity(activityId) {
+    return fetch(`${config.API_BASE_URL}/activities/${activityId}`, {
+      headers: {}
+    }).then(res =>
+      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
+    );
   }
 };
 
