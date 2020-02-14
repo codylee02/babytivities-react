@@ -3,6 +3,7 @@ import "./Activities.css";
 import ActivityListItem from "../../components/ActivityListItem/ActivityListItem";
 import BabytivitiesContext from "../../context/BabytivitiesContext";
 import ActivitiesApiService from "../../services/activities-api-service";
+import ActivityFilter from "../../components/ActivityFilter/ActivityFilter";
 
 export default class Activities extends React.Component {
   static contextType = BabytivitiesContext;
@@ -25,23 +26,8 @@ export default class Activities extends React.Component {
     return (
       <div className="Activities">
         <h1>Activities</h1>
-        <div>
-          Type:
-          <select>
-            <option>All activity types</option>
-            <option>Sensory</option>
-            <option>Critical Thinking</option>
-          </select>
-        </div>
-        <div>
-          Age:
-          <select>
-            <option>All ages</option>
-            <option value="0-12m">0 - 12 Months</option>
-            <option value="13-24m">13 - 24 Months</option>
-            <option value="25-36m">25 - 36 Months</option>
-          </select>
-        </div>
+        <ActivityFilter />
+
         <ul className="Activities__ul">
           {error ? <p>There was an error</p> : this.renderActivities()}
         </ul>

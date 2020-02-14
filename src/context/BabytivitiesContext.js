@@ -11,11 +11,16 @@ export default BabytivitiesContext;
 export class BabytivitiesProvider extends React.Component {
   state = {
     activitiesList: [],
+    favoritesList: [],
     error: null
   };
 
   setActivitiesList = activitiesList => {
     this.setState({ activitiesList });
+  };
+
+  setFavoritesList = favoritesList => {
+    this.setState({ favoritesList });
   };
 
   setError = error => {
@@ -28,8 +33,10 @@ export class BabytivitiesProvider extends React.Component {
       <BabytivitiesContext.Provider
         value={{
           activitiesList: this.state.activitiesList,
+          favoritesList: this.state.favoritesList,
           error: this.state.error,
-          setActivitiesList: this.setActivitiesList
+          setActivitiesList: this.setActivitiesList,
+          setFavoritesList: this.setFavoritesList
         }}
       >
         {this.props.children}
