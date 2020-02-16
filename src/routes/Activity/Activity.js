@@ -45,11 +45,6 @@ export default class Activity extends React.Component {
           <span>{this.state.activity.age}</span>{" "}
           <span>{this.state.activity.type}</span>
         </div>
-        <img
-          className="Activity__image"
-          src="https://picsum.photos/200"
-          alt="placeholder"
-        />
         <h2>Supplies:</h2>
         <ul>{materials}</ul>
         <h2>How to play:</h2>
