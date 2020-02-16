@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ActivityListItem.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import FavoriteToggle from "../../components/FavoriteToggle/FavoriteToggle";
 
 export default function ActivityListItem(props) {
   return (
@@ -17,7 +15,7 @@ export default function ActivityListItem(props) {
         </div>
       </div>
       <div className="ActivityListItem__favorite">
-        <FontAwesomeIcon icon={faHeart} />
+        <FavoriteToggle activityId={props.activity.id} />
       </div>
     </li>
   );
