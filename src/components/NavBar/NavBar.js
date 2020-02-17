@@ -25,7 +25,7 @@ export default class NavBar extends React.Component {
   }
 
   render() {
-    let menuClass = this.state.isOpen ? "NavLinks" : "NavLinks-closed";
+    let menuClass = this.state.isOpen ? "NavLinks" : "NavLinks closed";
     let logoutOrLogin = TokenService.hasAuthToken() ? "Logout" : "Login";
     let logoutOrLoginLink = TokenService.hasAuthToken() ? "/" : "/login";
     let favoritesLink = TokenService.hasAuthToken() ? "/favorites" : "/login";
@@ -37,25 +37,23 @@ export default class NavBar extends React.Component {
           className="Hamburger"
           onClick={() => this.toggleMenu()}
         />
-        <div className="NavLinks">
-          <div className={menuClass}>
-            <div className="left">
-              <Link to={"/activities"} onClick={() => this.toggleMenu()}>
-                Activities
-              </Link>
-              <Link to={`${favoritesLink}`} onClick={() => this.toggleMenu()}>
-                Favorites
-              </Link>
-            </div>
-            <div className="right">
-              <Link to={"/"}>Landing Page </Link>
-              <Link
-                to={`${logoutOrLoginLink}`}
-                onClick={() => this.handleLogoutClick()}
-              >
-                {logoutOrLogin}
-              </Link>
-            </div>
+        <div className={menuClass}>
+          <div className="left">
+            <Link to={"/activities"} onClick={() => this.toggleMenu()}>
+              Activities
+            </Link>
+            <Link to={`${favoritesLink}`} onClick={() => this.toggleMenu()}>
+              Favorites
+            </Link>
+          </div>
+          <div className="right">
+            <Link to={"/"}>Landing Page </Link>
+            <Link
+              to={`${logoutOrLoginLink}`}
+              onClick={() => this.handleLogoutClick()}
+            >
+              {logoutOrLogin}
+            </Link>
           </div>
         </div>
       </nav>
