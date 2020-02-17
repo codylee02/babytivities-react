@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import TokenService from "../../services/token-service";
+import BabytivitiesContext from "../../context/BabytivitiesContext";
 
 import "./NavBar.css";
 
 export default class NavBar extends React.Component {
+  static contextType = BabytivitiesContext;
+
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
@@ -18,13 +21,15 @@ export default class NavBar extends React.Component {
 
   handleLogoutClick() {
     TokenService.clearAuthToken();
+    this.context.setFavoritesList([]);
   }
 
   render() {
     let menuClass = this.state.isOpen ? "NavLinks" : "NavLinks-closed";
-    let landingPageLink = TokenService.hasAuthToken()
-      ? "Logout"
-      : "Landing Page";
+    let logoutOrLogin = TokenService.hasAuthToken() ? "Logout" : "Login";
+    let logoutOrLoginLink = TokenService.hasAuthToken() ? "/" : "/login";
+    let favoritesLink = TokenService.hasAuthToken() ? "/favorites" : "/login";
+
     return (
       <nav className="NavBar">
         <FontAwesomeIcon
@@ -37,11 +42,15 @@ export default class NavBar extends React.Component {
           <Link to={"/activities"} onClick={() => this.toggleMenu()}>
             Activities
           </Link>
-          <Link to={"/favorites"} onClick={() => this.toggleMenu()}>
+          <Link to={`${favoritesLink}`} onClick={() => this.toggleMenu()}>
             Favorites
           </Link>
-          <Link to={"/"} onClick={() => this.handleLogoutClick()}>
-            {landingPageLink}
+          <Link to={"/"}>Landing Page </Link>
+          <Link
+            to={`${logoutOrLoginLink}`}
+            onClick={() => this.handleLogoutClick()}
+          >
+            {logoutOrLogin}
           </Link>
         </div>
       </nav>
