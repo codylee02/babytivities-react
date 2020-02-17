@@ -19,6 +19,10 @@ export default class NavBar extends React.Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
 
+  closeMenu() {
+    this.setState({ isOpen: false });
+  }
+
   handleLogoutClick() {
     TokenService.clearAuthToken();
     this.context.setFavoritesList([]);
@@ -39,10 +43,10 @@ export default class NavBar extends React.Component {
         />
         <div className={menuClass}>
           <div className="left">
-            <Link to={"/activities"} onClick={() => this.toggleMenu()}>
+            <Link to={"/activities"} onClick={() => this.closeMenu()}>
               Activities
             </Link>
-            <Link to={`${favoritesLink}`} onClick={() => this.toggleMenu()}>
+            <Link to={`${favoritesLink}`} onClick={() => this.closeMenu()}>
               Favorites
             </Link>
           </div>
