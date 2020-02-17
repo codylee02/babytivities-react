@@ -40,11 +40,10 @@ export default class Activities extends React.Component {
           )
           .catch(this.context.setError);
       }
-    } else {
-      ActivitiesApiService.getActivities()
-        .then(this.context.setActivitiesList)
-        .catch(this.context.setError);
     }
+    ActivitiesApiService.getActivities()
+      .then(this.context.setActivitiesList)
+      .catch(this.context.setError);
   }
 
   renderActivities = () => {
