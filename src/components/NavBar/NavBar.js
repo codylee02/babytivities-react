@@ -37,21 +37,26 @@ export default class NavBar extends React.Component {
           className="Hamburger"
           onClick={() => this.toggleMenu()}
         />
-
-        <div className={menuClass}>
-          <Link to={"/activities"} onClick={() => this.toggleMenu()}>
-            Activities
-          </Link>
-          <Link to={`${favoritesLink}`} onClick={() => this.toggleMenu()}>
-            Favorites
-          </Link>
-          <Link to={"/"}>Landing Page </Link>
-          <Link
-            to={`${logoutOrLoginLink}`}
-            onClick={() => this.handleLogoutClick()}
-          >
-            {logoutOrLogin}
-          </Link>
+        <div className="NavLinks">
+          <div className={menuClass}>
+            <div className="left">
+              <Link to={"/activities"} onClick={() => this.toggleMenu()}>
+                Activities
+              </Link>
+              <Link to={`${favoritesLink}`} onClick={() => this.toggleMenu()}>
+                Favorites
+              </Link>
+            </div>
+            <div className="right">
+              <Link to={"/"}>Landing Page </Link>
+              <Link
+                to={`${logoutOrLoginLink}`}
+                onClick={() => this.handleLogoutClick()}
+              >
+                {logoutOrLogin}
+              </Link>
+            </div>
+          </div>
         </div>
       </nav>
     );

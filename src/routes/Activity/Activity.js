@@ -1,9 +1,7 @@
 import React from "react";
 import "./Activity.css";
 import ActivitiesApiService from "../../services/activities-api-service";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import FavoriteToggle from "../../components/FavoriteToggle/FavoriteToggle";
 
 export default class Activity extends React.Component {
   static defaultProps = {
@@ -39,7 +37,7 @@ export default class Activity extends React.Component {
       <article className="Activity">
         <div className="Activity__title">
           <h1>{this.state.activity.title}</h1>
-          <FontAwesomeIcon icon={faHeart} />
+          <FavoriteToggle activityId={this.props.match.params.id} />
         </div>
         <div className="Activity__meta-info">
           <span>{this.state.activity.age}</span>{" "}

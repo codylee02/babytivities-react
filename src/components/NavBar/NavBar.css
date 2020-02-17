@@ -61,16 +61,36 @@
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-/* @media screen and (max-width: 600px) {
-    .Nav {position: relative;}
-    .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .Nav a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }  */
+@media only screen and (min-width: 768px) {
+  .Hamburger {
+    display: none;
+  }
+
+  .NavLinks-closed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left,
+  .right {
+    display: flex;
+  }
+
+  .Nav .Icon {
+    display: inline-block;
+  }
+  .Nav {
+    position: relative;
+  }
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
