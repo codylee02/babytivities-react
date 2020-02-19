@@ -13,6 +13,10 @@
   font-size: 1.5rem;
 }
 
+.ActivityListItem__meta {
+  display: flex;
+}
+
 .ActivityListItem__favorite {
   font-size: 1.5rem;
   align-self: center;
@@ -20,9 +24,10 @@
 
 .ActivityListItem__meta span {
   font-size: 0.8rem;
-  background: lightgray;
+  background: #ffcd0a;
   padding: 0.2rem 0.4rem;
   margin: 0.2rem;
   margin-left: 0;
   border-radius: 0.4rem;
+  color: #330800;
 }

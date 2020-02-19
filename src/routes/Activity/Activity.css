@@ -6,27 +6,47 @@
   overflow: auto;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
 }
 
 .Activity__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
 }
 
 .Activity h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
+
 .Activity__meta-info span {
   background: lightgray;
   padding: 0.2rem 0.4rem;
   margin: 0.2rem;
   border-radius: 0.4rem;
+  background: #ffcd0a;
+  color: #330800;
 }
 
 .Activity__image {
   display: block;
   margin: 1rem auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 768px) {
+  .Activity {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Activity {
+    max-width: 50%;
+  }
 }

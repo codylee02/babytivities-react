@@ -13,11 +13,12 @@ export default function LandingPageNav() {
   }
   return (
     <nav role="navigation" className="LandingPageNav">
-      {/* <Link to="/register">Register</Link> */}
-      <Link to="/activities">Activities</Link>
-      <Link to={`${logoutOrLoginLink}`} onClick={() => handleLogoutClick()}>
-        {logoutOrLogin}
-      </Link>
+      <div className="LandingPageNav__links">
+        <Link to="/activities">Activities</Link>
+        <Link to={`${logoutOrLoginLink}`} onClick={() => handleLogoutClick()}>
+          {logoutOrLogin}
+        </Link>
+      </div>
     </nav>
   );
 }

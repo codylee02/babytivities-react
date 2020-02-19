@@ -1,0 +1,11 @@
+.ActivityFilter {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.ActivityFilter select {
+  font-size: 1rem;
+}

@@ -1,29 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
 header {
   padding: 12% 0;
   text-align: center;
 }
 
 section {
-  min-height: 100px;
-  padding: 2rem 2rem;
-  background-color: #bbb;
-  text-align: center;
+  min-height: 200px;
+  padding: 6% 0;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
+.LandingPage__img {
+  max-width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.sign-up-form {
-  text-align: left;
-  padding: 2rem;
+.LandingPage__icon svg {
+  font-size: 10rem;
 }
-.sign-up-form input {
-  border: 1px solid #ddd;
-  display: block;
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  text-align: left;
-  width: 100%;
-  border-radius: 4px;
+
+.RegistrationSection {
+  background: #910ce8;
+  color: white;
+  border-radius: 30px;
+  margin: 5%;
+  padding: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding-bottom: 2%;
+  }
+
+  .LandingPage__app-info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .LandingPage__app-info-container section {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .LandingPage__app-info-container {
+    max-width: 70%;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .LandingPage__app-info-container p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
