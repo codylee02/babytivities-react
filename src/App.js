@@ -9,6 +9,7 @@ import LandingPage from "./routes/LandingPage/LandingPage";
 //import LandingPageHooks from "./routes/LandingPage/LandingPageHooks";
 import LandingPageNav from "./components/LandingPageNav/LandingPageNav";
 import LoginPage from "./routes/LoginPage/LoginPage";
+import RegistrationPage from "./routes/RegistrationPage/RegistrationPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/favorites" component={Favorites} />
         <Route path="/activities/:id" component={Activity} />
         <Route path="/login" component={LoginPage} />
+        <Route path="/register" component={RegistrationPage} />
       </main>
     </>
   );
