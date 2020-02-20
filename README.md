@@ -1,7 +1,6 @@
 # Babytivities Client:
 
-PAKD allows users to make lists of items to pack.
-Users can also make templates that can be imported into lists.
+Babytivities allows users to view, filter, & favorite activites that parents can do with their children from home.
 
 ## Live Page: [Babytivities](https://babytivities-app.now.sh/)
 
