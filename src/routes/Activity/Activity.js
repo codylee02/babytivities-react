@@ -23,7 +23,6 @@ export default class Activity extends React.Component {
 
   componentDidMount() {
     let activityId = this.props.match.params.id;
-    console.log(activityId);
     ActivitiesApiService.getActivity(activityId).then(activity =>
       this.setState({ activity: { ...activity } })
     );

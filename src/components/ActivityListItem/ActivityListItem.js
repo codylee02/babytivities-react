@@ -20,3 +20,7 @@ export default function ActivityListItem(props) {
     </li>
   );
 }
+
+ActivityListItem.defaultProps = {
+  activity: {}
+};
