@@ -13,6 +13,7 @@
 .Activity__title {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 3rem;
   margin-bottom: 1.2rem;
