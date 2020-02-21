@@ -4,9 +4,7 @@ Babytivities allows users to view, filter, & favorite activites that parents can
 
 ## Live Page: [Babytivities](https://babytivities-app.now.sh/)
 
-## Server:
-
-[Babytivities server GitHub](https://github.com/codylee02/babytivities-api)
+## Server: [Babytivities Server GitHub](https://github.com/codylee02/babytivities-api)
 
 ## Technology Used
 
