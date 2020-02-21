@@ -2,7 +2,6 @@ import React from "react";
 import "./ActivityFilter.css";
 
 export default function ActivityFilter(props) {
-  // onChange = run the filter func.
   return (
     <div className="ActivityFilter">
       <div>
