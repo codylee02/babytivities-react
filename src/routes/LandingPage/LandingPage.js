@@ -2,6 +2,7 @@ import React from "react";
 import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBaby } from "@fortawesome/free-solid-svg-icons";
+import TokenService from "../../services/token-service";
 
 import "./LandingPage.css";
 
@@ -10,6 +11,18 @@ export default function LandingPage(props) {
     const { history } = props;
     history.push("/login");
   }
+
+  const showRegistrationForm = TokenService.hasAuthToken() ? (
+    ""
+  ) : (
+    <section className="RegistrationPage" id="register">
+      <h2>Sign Up</h2>
+      <RegistrationForm
+        onRegistrationSuccess={handleRegistrationSuccess}
+      />
+    </section>
+  );
+
   return (
     <div>
       <header role="banner">
@@ -53,10 +66,7 @@ export default function LandingPage(props) {
           <p>Mark your favorites for playtime later.</p>
         </section>
       </div>
-      <section className="RegistrationPage" id="register">
-        <h2>Sign Up</h2>
-        <RegistrationForm onRegistrationSuccess={handleRegistrationSuccess} />
-      </section>
+      {showRegistrationForm}
     </div>
   );
 }
